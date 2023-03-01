@@ -4,6 +4,13 @@ Image to provide utils to debug / test / investigate in docker network / k8s.
 
 Based on [nicolaka/netshoot](https://github.com/nicolaka/netshoot) image
 
+Usage of image:
+```shell
+docker pull nikitosnik/multitool:latest
+```
+
+[Link to dockerhub](https://hub.docker.com/repository/docker/nikitosnik/multitool/general)
+
 
 ### Load test utils
 
