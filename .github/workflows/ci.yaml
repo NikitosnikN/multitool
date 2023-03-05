@@ -6,7 +6,7 @@ on:
       - '*'
 
 jobs:
-  docker:
+  build-and-push:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,4 +29,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: nikitosnik/multitool:${{ github.ref_name }}
+          tags: | 
+            nikitosnik/multitool:${{ github.ref_name }}
+            nikitosnik/multitool:latest
