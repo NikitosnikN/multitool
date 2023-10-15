@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multitool
+  labels:
+    app: multitool
+spec:
+  containers:
+    - name: app
+      image: nikitosnik/multitool:latest
+      command:
+        - "sleep"
+        - "infinity"
